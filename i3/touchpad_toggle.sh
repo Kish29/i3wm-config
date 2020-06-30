@@ -5,7 +5,7 @@
 # you can use 
 	# $: xinput list to check you touchpad
 
-ID=15
+ID=$(xinput | grep -i "touchpad" | awk '{ print $6 }' | sed 's/id=//' )
 
 # get status 
 STATUS=$(xinput list-props $ID | grep "Device Enabled" | awk '{ print $4 }')
