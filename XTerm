@@ -262,73 +262,17 @@
 !*allowTcapOps: false
 !*allowTitleOps: false
 !*allowWindowOps: false
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-! Xft.dpi:96&nbsp; &nbsp;
-! xpdf.title: PDF&nbsp; &nbsp;
-! XTerm*faceSize: 10&nbsp; &nbsp;
-! XTerm*faceSize1: 10&nbsp; &nbsp;
-! XTerm*faceSize2: 10&nbsp; &nbsp;
-! XTerm*faceSize3: 10&nbsp; &nbsp;
-! XTerm*faceSize4: 10&nbsp; &nbsp;
-! XTerm*faceSize5: 10&nbsp; &nbsp;
-! XTerm*faceSize6: 10&nbsp; &nbsp;
-! XTerm*jumpScroll: true&nbsp; &nbsp;
-! &nbsp; 
-! xterm.termName: xterm-256color &nbsp;
-! xterm.geometry: 80x36 &nbsp;
-! xterm*scrollBar: false &nbsp;
-! xterm*rightScrollBar: true &nbsp;
-! xterm*loginshell: true &nbsp;
-! xterm*cursorBlink: true &nbsp;
-! xterm*background:&nbsp;&nbsp; black &nbsp;
-! xterm*foreground:&nbsp;&nbsp; gray &nbsp;
-! xterm.borderLess: true &nbsp;
-! xterm.cursorBlink: true &nbsp;
-! xterm*colorUL: yellow &nbsp;
-! xterm*colorBD: white &nbsp;
-! &nbsp; &nbsp;
-!fix alt key input &nbsp;
-!xterm*eightBitInput: false &nbsp;
-!xterm*altSendsEscape: true 
-
-!mouse selecting to copy, ctrl-v to paste &nbsp;
-!Ctrl p to print screen content to file &nbsp;
-! XTerm*VT100.Translations: #override \ &nbsp;
-!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\ &nbsp;
-! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\ &nbsp;
-! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl <KeyPress> P: print() \n &nbsp;
-! &nbsp; 
-!font and locale &nbsp;
-!xterm*locale: true &nbsp;
+! xterm*locale: true &nbsp;
 xterm.utf8:     true
 xterm*utf8Title:   true
-! xterm*fontMenu*fontdefault*Label: Default &nbsp;
-xterm*faceName:DejaVu Sans Mono:antialias=True:pixelsize=16
-! xterm*faceName:YaHei Consolas Hybrid YaHei Consolas Hybrid Regular:antialias=True:pixelsize=14 &nbsp;
-! xterm*faceName: monofur:antialias=True:pixelsize=20 &nbsp;
-xter*boldFont: Bitstream Vera Sans Mono:style=Bold:pixelsize=15;
+! antialias -> 抗锯齿
+! xterm*faceName: DejaVu Sans Mono:antialias=True:pixelsize=10
+! 只有lucida-Console-2.ttf能够显示中文
+xterm*faceName: Lucida Console:antialias=True:pixelsize=16
+! xterm*faceName: YaHei Consolas Hybrid:antialias=True:pixelsize=16
+! xterm*boldFont: Lucida Console:style=Bold:antialias=True:pixelsize=15
+! xterm*faceNameDoublesize: Lucida Console:antialias=True:pixelsize=15
+! xter*boldFont: Bitstream Vera Sans Mono:style=Bold:pixelsize=15;
+! xterm*faceNameDoublesize:WenQuanYi Zen Hei:antialias=True:pixelsize=15
 
-! xterm*boldFont:YaHei Consolas Hybrid YaHei Consolas Hybrid Regular:style=bold:pixelsize=13 &nbsp;
-xterm*faceNameDoublesize:WenQuanYi Zen Hei:antialias=True:pixelsize=15
-! xterm*xftAntialias: true &nbsp;
-! xterm.cjkWidth:true &nbsp;
-! XTerm*inputMethod: ibus 
-! XTerm*preeditType: Root &nbsp;
-! xterm*VT100.Translations: #override \
-! 				Ctrl Shift <key>C: insert-selection(CLIPBOARD) \n\
-! 				Ctrl Shift <key>V: copy-selection(CLIPBOARD)
-!
-!
-!
-!
-!
-!
+! *xterm*font: *-fixed-*-*-*-*-20-*

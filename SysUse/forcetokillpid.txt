@@ -1,0 +1,7 @@
+usage:
+	kill -9 pid
+if you want to kill background pid
+	jobs -l
+
+	and then 
+	kill -9 pid

@@ -1,0 +1,3 @@
+type:
+	i3 --more-version
+	to show which file i3 loaded, and chage it!

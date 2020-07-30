@@ -1,0 +1,2 @@
+Brightness:	vim /sys/class/backlight/intel_backlight/brightness
+Volumn:		alsamixer

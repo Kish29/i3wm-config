@@ -1,0 +1,7 @@
+# 如何找到一个链接文件的最终源
+> readlink [file-name]
+
+## 附上find的简单用法
+
+> find 路径 -name "文件名"
+

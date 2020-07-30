@@ -1,0 +1,5 @@
+press "q" to up right sound
+press "z" to down right sound
+press "e" to up left sound
+press "c" to down left sound
+press "s" to select device to use

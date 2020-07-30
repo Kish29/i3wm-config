@@ -1,0 +1,25 @@
+1. 安装ttf字体
+
+	将你的ttf文件拷贝到/usr/share/fonts/truetype/目录下，
+	cp -p *.ttf /usr/share/fonts/truetype
+	
+	更新即可
+	fc-cache -fv
+	
+	然后可以通过fc-list查看刚刚安装的字体
+	fc-list | grep "***"
+
+	修改xterm的显示字体
+
+	vim /etc/X11/app-defaults/XTerm
+
+	添加：
+	xterm*faceName: Lucida Console:antialias=True:pixelsize=16
+
+2. 更换tty字体
+	将psf文件拷贝到/etc/console-setup/目录
+	
+	修改/etc/default/console-setup 配置文件
+
+	ex:		FONT='/etc/console-setup/lucida-12x20.psf'
+

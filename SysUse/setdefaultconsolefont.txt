@@ -1,0 +1,4 @@
+first, you have to try to adapt the file to set default console font
+	#:	vim /etc/default/console-setup
+and then, add 'setupcon' to system profile(which is /etc/profile)
+	#: setupcon

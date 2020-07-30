@@ -1,0 +1,5 @@
+先用
+aptitude search kali-tools-
+
+然后下载所有即可
+aotitude install kali-tools-xxx kali-tools-xxx...
