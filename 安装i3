@@ -1,0 +1,38 @@
+
+
+# 必须！！！
+pacman -S xorg-server xorg-xinit
+
+pacman -S i3-wm i3lock i3status
+
+# 必须
+pacman -S 能在x window系统下显示的字体
+
+
+
+# 必须 安装一个终端模拟器 xterm
+
+pacman -S xterm
+
+
+
+# 安装显卡驱动
+
+//TODO
+
+
+
+# 安装Monaco字体
+
+wget http://d.xiazaiziti.com/en_fonts/fonts/m/Monaco.ttf
+
+
+
+# 修改xterm字体
+
+在用户目录下新建文件：.Xresources
+
+写入：XTerm*faceName: Monaco:style=Regular
+
+加载配置：xrdb -load .Xresources
+
