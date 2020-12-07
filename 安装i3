@@ -19,8 +19,8 @@ pacman -S xterm
 
 # 安装显卡驱动
 
-//TODO
-
+pacman -S nvidia
+pacman -S nvidia-settins
 
 
 # 安装Monaco字体
