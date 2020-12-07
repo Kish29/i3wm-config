@@ -1,38 +1,39 @@
 
 
-# ±ØĞë£¡£¡£¡
+# å¿…é¡»ï¼ï¼ï¼
 pacman -S xorg-server xorg-xinit
 
 pacman -S i3-wm i3lock i3status
 
-# ±ØĞë
-pacman -S ÄÜÔÚx windowÏµÍ³ÏÂÏÔÊ¾µÄ×ÖÌå
+# å¿…é¡»
+pacman -S èƒ½åœ¨x windowç³»ç»Ÿä¸‹æ˜¾ç¤ºçš„å­—ä½“
+æ¯”å¦‚ wqy-zenhei
 
 
 
-# ±ØĞë °²×°Ò»¸öÖÕ¶ËÄ£ÄâÆ÷ xterm
+# å¿…é¡» å®‰è£…ä¸€ä¸ªç»ˆç«¯æ¨¡æ‹Ÿå™¨ xterm
 
 pacman -S xterm
 
 
 
-# °²×°ÏÔ¿¨Çı¶¯
+# å®‰è£…æ˜¾å¡é©±åŠ¨
 
 //TODO
 
 
 
-# °²×°Monaco×ÖÌå
+# å®‰è£…Monacoå­—ä½“
 
 wget http://d.xiazaiziti.com/en_fonts/fonts/m/Monaco.ttf
 
 
 
-# ĞŞ¸Äxterm×ÖÌå
+# ä¿®æ”¹xtermå­—ä½“
 
-ÔÚÓÃ»§Ä¿Â¼ÏÂĞÂ½¨ÎÄ¼ş£º.Xresources
+åœ¨ç”¨æˆ·ç›®å½•ä¸‹æ–°å»ºæ–‡ä»¶ï¼š.Xresources
 
-Ğ´Èë£ºXTerm*faceName: Monaco:style=Regular
+å†™å…¥ï¼šXTerm*faceName: Monaco:style=Regular
 
-¼ÓÔØÅäÖÃ£ºxrdb -load .Xresources
+åŠ è½½é…ç½®ï¼šxrdb -load .Xresources
 
