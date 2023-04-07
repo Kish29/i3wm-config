@@ -9,10 +9,7 @@ pacman -S i3-wm i3lock i3status
 pacman -S 能在x window系统下显示的字体
 比如 wqy-zenhei
 
-
-
 # 必须 安装一个终端模拟器 xterm
-
 pacman -S xterm
 
 # 安装Monaco字体
@@ -25,6 +22,17 @@ fc-list | grep -i "monaco"
 # 修改xinitrc
 cp /etc/X11/xinit/xinitrc .xinitrc
 将最后几行删除，改为exec i3，保存
+startx启动i3
+
+# 修改分辨率
+pacman -S xorg-xrandr
+
+cvt (your own resolution), eg:
+cvt 2560 1440
+
+/etc/profile中添加
+xrandr --newmode "1920x1080_60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync
+xrandr --addmode Virtual1 "1920x1080_60.00"
 
 # 修改xterm字体
 
