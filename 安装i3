@@ -28,11 +28,15 @@ startx启动i3
 pacman -S xorg-xrandr
 
 cvt (your own resolution), eg:
-cvt 2560 1440 120
+cvt 1920 1080 60
 
-/etc/profile中添加
+在/etc目录下编写脚本 ch_res.sh
 xrandr --newmode "1920x1080_60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync
-xrandr --addmode Virtual1 "1920x1080_60.00"
+xrandr --addmode Virtual-1(your device) "1920x1080_60.00"
+xrandr --output Virtual-1 --mode "1920x1080_60.00"
+
+然后在你的~/.config/i3/config中添加
+exec --no-startup-id sh /etc/ch_res.sh
 
 # 修改xterm字体
 
