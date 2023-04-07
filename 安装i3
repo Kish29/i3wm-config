@@ -42,7 +42,9 @@ exec --no-startup-id sh /etc/ch_res.sh
 
 在用户目录下新建文件：.Xresources
 
-写入：XTerm*faceName: Monaco:style=Regular
+写入：
+XTerm*faceName: Monaco:style=Regular
+XTerm*faceSize: 16
 
 加载配置：xrdb -load .Xresources
 
