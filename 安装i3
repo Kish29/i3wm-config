@@ -28,7 +28,7 @@ startx启动i3
 pacman -S xorg-xrandr
 
 cvt (your own resolution), eg:
-cvt 2560 1440
+cvt 2560 1440 120
 
 /etc/profile中添加
 xrandr --newmode "1920x1080_60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync
