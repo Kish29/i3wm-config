@@ -26,7 +26,9 @@ pacman -S nvidia-settins
 # 安装Monaco字体
 
 wget http://d.xiazaiziti.com/en_fonts/fonts/m/Monaco.ttf
-
+cp Monaco.ttf /usr/share/fonts
+fc-cache -f -v
+fc-list | grep -i "monaco"
 
 
 # 修改xterm字体
