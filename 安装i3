@@ -15,14 +15,6 @@ pacman -S 能在x window系统下显示的字体
 
 pacman -S xterm
 
-
-
-# 安装显卡驱动
-
-pacman -S nvidia
-pacman -S nvidia-settins
-
-
 # 安装Monaco字体
 
 wget http://d.xiazaiziti.com/en_fonts/fonts/m/Monaco.ttf
@@ -30,6 +22,9 @@ cp Monaco.ttf /usr/share/fonts
 fc-cache -f -v
 fc-list | grep -i "monaco"
 
+# 修改xinitrc
+cp /etc/X11/xinit/xinitrc .xinitrc
+将最后几行删除，改为exec i3，保存
 
 # 修改xterm字体
 
